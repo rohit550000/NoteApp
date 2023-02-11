@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+    padding: 0 12rem;
+}
+
+.notes {
+    height: 45rem;
+    width: 40rem;
+    border-radius: 3rem;
+    overflow: hidden;
+    box-shadow: 12px 12px 18px -18px black;
+    position: relative;
+}
+
+.notes .options {
+    background-color: rgb(255, 240, 70);
+    padding: 1rem;
+    display: flex;
+    gap: 6rem;
+    justify-content: center;
+}
+
+.notes .options .edit,
+.delete {
+    background-color: transparent;
+    border: navajowhite;
+    font-size: 2.5rem;
+    outline: none;
+    color: rgb(255, 0, 242);
+    cursor: pointer;
+}
+
+.notes .options .delete {
+    color: red;
+}
+
+.storeddata {
+    background-color:rgba(8, 0, 3, 0.192);/* halka kala color */
+    padding-top: .5rem;
+    
+
+    height: 40rem;
+    width: 100%;
+    object-fit: contain;
+    position: absolute;
+    position: relative;
+}
+
+.storeddata .lock {
+    text-align: center;
+    font-size: 4rem;
+    cursor: pointer;
+}
+
+.storeddata .data {
+    padding: .8rem;
+    font-size: 1.9rem;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 35rem;
+    width: 100%;
+    object-fit: contain;
+    position: absolute;
+}
+
+.storeddata .lock:hover {
+    color: rgb(255, 2, 6);
+}
+
+textarea {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    outline: none;
+    border: none;
+    padding: 1rem;
+
+    background-color: rgba(255, 6, 110, 0.311);
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hidden {
+    display: none;
+}
+
+.add {
+    width: 100%;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.add .addd {
+    padding: 1rem 3rem;
+    font-size: 3rem;
+    font-weight: 600;
+    background-color: rgba(0, 217, 255, 0.397);
+    border-radius: 3rem;
+    outline: none;
+    border: 3px solid black;
+    transition: all .6s ease-in-out;
+    cursor: pointer;
+}
+
+.add .addd:hover {
+    padding: 1rem 4rem;
+    background-color: rgb(255, 242, 0);
+
+}
